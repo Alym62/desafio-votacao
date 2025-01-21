@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: consumer
+  datasource:
+    url: jdbc:postgresql://localhost:5432/desafio-votacao
+    password: postgres
+    username: postgres
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  sql:
+    init:
+      mode: always
+
+app:
+  queue: "votings.v1.vote-created-persist"
+  exchange: "votings.v1.vote-created"
