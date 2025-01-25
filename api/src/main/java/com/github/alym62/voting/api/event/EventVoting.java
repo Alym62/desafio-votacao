@@ -8,7 +8,7 @@ import lombok.Builder;
 
 @Builder
 public record EventVoting(
-        Events event,
-        Long idCandidate,
-        LocalDateTime createdAt) {
+                Events event,
+                Long idCandidate,
+                LocalDateTime createdAt) {
 }

@@ -19,7 +19,7 @@ public class EventService {
 
     public void sendEvent(EventVoting event) {
         if (event.event() == Events.EVENT_VOTE) {
-            rabbitTemplate.convertAndSend(exchange, null, event);
+            rabbitTemplate.convertAndSend(exchange, "", event);
         }
     }
 }

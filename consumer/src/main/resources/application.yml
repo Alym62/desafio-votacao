@@ -15,12 +15,12 @@ spring:
     password: guest
   sql:
     init:
-      mode: always
+      mode: embedded
       schema-locations:
       - classpath:/sql/schema.sql
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
 
 app:
   queue: "votings.v1.vote-created-persist"
