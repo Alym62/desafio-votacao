@@ -1,5 +1,3 @@
-CREATE DATABASE desafio-votacao;
-
 CREATE TABLE candidates (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
